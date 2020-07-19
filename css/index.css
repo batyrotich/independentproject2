@@ -1,6 +1,11 @@
-body{
-    background-image: url();
-}
+
+.page-holder {
+    min-height: 100vh;
+  }
+  
+  .bg-cover {
+    background-size: cover !important;
+  }
 #logo{
     display: block;
    margin-left: auto;
@@ -19,3 +24,19 @@ marquee{
     text-decoration:black;
     padding: 5%;
 }
+.bottom {
+    background-color:#3693ff;
+    font-size: 20px;
+  }
+  p {
+    color: whitesmoke;
+  }
+  footer {
+    padding: 0.2rem;
+  }
+  footer p {
+    text-align: center;
+  }
+  #socialmedia {
+    text-align: center;
+  }
