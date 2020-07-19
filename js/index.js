@@ -16,40 +16,29 @@ var month = parseInt(document.getElementById("month").Value);
 var year = parseInt(document.getElementById("year").Value);
 var female = document.getElementById("female");
 var male = document.getElementById("male");
-
 // validate day
-if(day <= 1 || day >= 32){
-    alert(
-        "Incorrect day entry! Try again"
-  );
+if(day < 1 || day > 31){
+    alert("Incorrect day entry! Try again");
 }
 // validate month
-if(month <= 0 || month >= 13){
-    alert(
-        "Incorrect month entry! Try Again"
-    );
+if(month < 0 || month >13){
+    alert("Incorrect month entry! Try Again");
 }
 // validate year
-if( year <= 0 || year > 2020){
-   alert(
-       "Incorrect year entry! Try again"
-   );
+if( year < 0 || year > 2020){
+   alert("Incorrect year entry! Try again");
 }
 var day = new Date(year + "/" + month + "/" + day);
 
 var dateOfBirth = day.getDay();
-	if (female.checked == true) {
+	if (female.checked === true) {
 		document.getElementById("alert1").style.display = "block";
-		document.getElementById("span1").innerHTML =
-			"You were born on, " + weekDays[dateOfBirth];
-		document.getElementById("span2").innerHTML =
-			"your Akan Name is " + femaleAkanNames[dateOfBirth];
+		document.getElementById("span1").innerHTML = "You were born on: " + weekDays[dateOfBirth];
+		document.getElementById("span2").innerHTML ="Your Akan Name is " + femaleAkanNames[dateOfBirth];
 	} else if (male.checked == true) {
 		document.getElementById("alert1").style.display = "block";
-		document.getElementById("span1").innerHTML = 
-		    "You were born on, " + weekDays[dateOfBirth];
-		document.getElementById("span2").innerHTML = 
-		    "your Akan Name is " + maleAkanNames[dateOfBirth];
+		document.getElementById("span1").innerHTML = "You were born on: " + weekDays[dateOfBirth];
+		document.getElementById("span2").innerHTML = "Your Akan Name is " + maleAkanNames[dateOfBirth];
 	}
 }
 //refresh button function
