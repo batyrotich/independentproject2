@@ -1,3 +1,12 @@
+body{
+    background-image: url();
+}
+#logo{
+    display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 15%;
+}
 marquee{
     height: 80px;
     width: 100% ;
