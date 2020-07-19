@@ -10,7 +10,8 @@
     display: block;
    margin-left: auto;
    margin-right: auto;
-   width: 15%;
+   border-radius: 50%;
+   width: 18%;
 }
 marquee{
     height: 80px;
@@ -19,7 +20,7 @@ marquee{
     font-family: Helvetica;
     font-weight: 1600;
     font-size: large;
-    background-color:blueviolet;
+    background-color:grey;
     opacity:1;
     text-decoration:black;
     padding: 5%;
@@ -28,8 +29,8 @@ marquee{
     background-color:#3693ff;
     font-size: 20px;
   }
-  p {
-    color: whitesmoke;
+.bottom p {
+    color: white;
   }
   footer {
     padding: 0.2rem;
