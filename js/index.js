@@ -32,3 +32,7 @@ if( year <= 0 || year > 2020){
 var day = new Date(day + "/" + month + "/" + year);
 
 }
+//refresh button function
+function refreshPage() {
+	window.location.reload();
+}
