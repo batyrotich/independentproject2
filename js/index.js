@@ -34,18 +34,17 @@ if( year <= 0 || year > 2020){
    alert(
        "Incorrect year entry! Try again"
    );
-}
-
-var day = new Date(day + "/" + month + "/" + year);
+   }
+var day = new Date(year + "/" + month + "/" + day);
 
 var dateOfBirth = day.getDay();
-	if (female.checked === true) {
+	if (female.checked == true) {
 		document.getElementById("alert1").style.display = "block";
 		document.getElementById("span1").innerHTML =
 			"You were born on, " + weekDays[dateOfBirth];
 		document.getElementById("span2").innerHTML =
 			"your Akan Name is " + femaleAkanNames[dateOfBirth];
-	} else if (male.checked === true) {
+	} else if (male.checked == true) {
 		document.getElementById("alert1").style.display = "block";
 		document.getElementById("span1").innerHTML = 
 		    "You were born on, " + weekDays[dateOfBirth];
