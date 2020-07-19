@@ -15,16 +15,16 @@
     <h2>ENTER YOUR BIRTHDAY DETAILS</h2>
     <form>
       <div class="form-group">
-        <label for="Day">Day:</label>
-        <input type="text" class="form-control" id="day" placeholder="e.g 01" name="day">
+        <label for="Day"><strong>Day of Birth:</strong></label>
+        <input  id="day" type="text" class="form-control" placeholder="e.g 01" min="1" max="31" max-length="2" required/>
       </div>
       <div class="form-group">
-        <label for="month">Month:</label>
-        <input type="text" class="form-control" id="month" placeholder="e.g 02 or February" name="month">
+        <label for="month"> <strong>Month of Birth:</strong></label>
+        <input  id="month" type="text" class="form-control" placeholder="e.g 02 or February"  min="1" max="12" required/>
       </div>
       <div class="form-group">
-        <label for="year">Year:</label>
-        <input type="text" class="form-control" id="year" placeholder="e.g 2001 " name="year">
+        <label for="year"><strong>Year of Birth:</strong></label>
+        <input  id="year" type="text" class="form-control"  placeholder="e.g 2001" max="2020" min="1600" max-length="4" size="4" required />
       </div>
       <button type="submit" class="btn btn-primary" onclick="getAkanName()">Submit</button>
       <div class="form-group form-check">
