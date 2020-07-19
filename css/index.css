@@ -7,11 +7,11 @@ marquee{
     font-size: large;
     background-color:blueviolet;
     opacity:1;
-    text-decoration; black;
+    text-decoration:black;
     padding: 5%;
 }
 #table{
     display: flex;
     text-align: center;
-    padding: 3%;
+    padding: 3%:
 }
