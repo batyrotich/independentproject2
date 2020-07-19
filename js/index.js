@@ -34,7 +34,7 @@ if( year <= 0 || year > 2020){
    alert(
        "Incorrect year entry! Try again"
    );
-   }
+}
 var day = new Date(year + "/" + month + "/" + day);
 
 var dateOfBirth = day.getDay();

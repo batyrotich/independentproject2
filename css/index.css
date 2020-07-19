@@ -1,0 +1,17 @@
+marquee{
+    height: 80px;
+    width: 100% ;
+    font-style: italic;
+    font-family: Helvetica;
+    font-weight: 1600;
+    font-size: large;
+    background-color:blueviolet;
+    opacity:1;
+    text-decoration; black;
+    padding: 5%;
+}
+#table{
+    display: flex;
+    text-align: center;
+    padding: 3%;
+}
