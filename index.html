@@ -1,19 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>Akan Names</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akan Names.</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> 
-</head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  </head>
 <body>
+  <div class="displayme container1">
+    <div class="alert-success alert myalert container" id="alert1">
+        <p>
+            <span id="span1"></span>
+            <span id="span2"></span>
+        </p>
+    </div>
+</div>
+<div class="container">
+    <div class="alert-danger alert myalert container" id="alert2">
+        <p>
+            <span id="span3"></span>
+        </p>
+    </div>
+</div>
 
 <div class="container">
     <h2>ENTER YOUR BIRTHDAY DETAILS</h2>
-    <form>
+    <form class="form-group" onsubmit="event.preventDefault()">
       <div class="form-group">
         <label for="Day"><strong>Day of Birth:</strong></label>
         <input  id="day" type="text" class="form-control" placeholder="e.g 01" min="1" max="31" max-length="2" required/>
@@ -26,22 +42,20 @@
         <label for="year"><strong>Year of Birth:</strong></label>
         <input  id="year" type="text" class="form-control"  placeholder="e.g 2001" max="2020" min="1600" max-length="4" size="4" required />
       </div>
-      <p><strong>Gender:</strong></p>
-   <form action="/action_page.php">
-    <div class="form-check">
-      <label class="form-check-label" for="female">
-        <input type="radio" class="form-check-input" id="female" name="optradio" value="female" checked>Female
+      <div class="myradio">
+        <p><strong>Gender:</strong></p>
+      <label class="radio-inline" for="radio">
+        <input type="radio" value="female" name="gender" id="female"required />Female
       </label>
+      <label class="radio-inline" for="radio">
+        <input type="radio" id="male"value="male" name="gender" required/>Male</label>
     </div>
-    <div class="form-check">
-      <label class="form-check-label" for="male">
-        <input type="radio" class="form-check-input" id="male" name="optradio" value="male">Male      </label>
-    </div>
-      <button type="submit"  id="submit"class="btn btn-primary" onclick="getAkanName()">Submit</button>
+      <button type="submit"  id="submit" class="btn btn-primary" onclick="getAkanName()">Submit</button>
       <button type="reset" class="btn btn-danger mybtn" value="reset" onclick="refreshPage()">Reset</button>
-      
+      </div>
     </form>
   </div>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>
