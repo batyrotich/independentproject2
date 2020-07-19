@@ -1,3 +1,7 @@
+// it hide alert
+document.getElementById("alert1").style.display = "none";
+document.getElementById("alert2").style.display = "none";
+
 //declare arrays for akan names
 var weekDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
@@ -9,7 +13,8 @@ function getAkanName() {
 var day = parseInt(document.getElementById("day").Value);
 var month = parseInt(document.getElementById("month").Value);
 var year = parseInt(document.getElementById("year").Value);
-
+var female = document.getElementById("female");
+var male = document.getElementById("male");
 // validate day
 if(day <= 1 || day >= 32){
     alert(
@@ -31,6 +36,20 @@ if( year <= 0 || year > 2020){
 
 var day = new Date(day + "/" + month + "/" + year);
 
+var dateOfBirth = day.getDay();
+	if (female.checked == true) {
+		document.getElementById("alert1").style.display = "block";
+		document.getElementById("span1").innerHTML =
+			"You were born on, " + weekDays[dateOfBirth];
+		document.getElementById("span2").innerHTML =
+			"your Akan Name is " + maleAkanNames[dateOfBirth];
+	} else if (male.checked == true) {
+		document.getElementById("alert1").style.display = "block";
+		document.getElementById("span1").innerHTML = 
+		    "You were born on, " + weekDays[dateOfBirth];
+		document.getElementById("span2").innerHTML = 
+		    "your Akan Name is " + maleAkanNames[dateOfBirth];
+	}
 }
 //refresh button function
 function refreshPage() {

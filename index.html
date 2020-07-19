@@ -26,6 +26,17 @@
         <label for="year"><strong>Year of Birth:</strong></label>
         <input  id="year" type="text" class="form-control"  placeholder="e.g 2001" max="2020" min="1600" max-length="4" size="4" required />
       </div>
+      <p><strong>Gender:</strong></p>
+   <form action="/action_page.php">
+    <div class="form-check">
+      <label class="form-check-label" for="female">
+        <input type="radio" class="form-check-input" id="female" name="optradio" value="female" checked>Female
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label" for="male">
+        <input type="radio" class="form-check-input" id="male" name="optradio" value="male">Male      </label>
+    </div>
       <button type="submit"  id="submit"class="btn btn-primary" onclick="getAkanName()">Submit</button>
       <button type="reset" class="btn btn-danger mybtn" value="reset" onclick="refreshPage()">Reset</button>
       
