@@ -1,47 +1,61 @@
-// it hide alert
+//hide the alert button
 document.getElementById("alert1").style.display = "none";
 document.getElementById("alert2").style.display = "none";
 
-//declare arrays for akan names
-var weekDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+//declare an array for my names
+var femaleAkanNames = ["Akosua","Adwoa" ,"Abenaa" ,"Akua" ,"Yaa" ,"Afua" ,"Ama"];
 
-var maleAkanNames = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
+var maleAkanNames = ["Kwasi","Kwadwo", "Kwabena" ,"Kwaku", "Yaw", "Kofi", "Kwame"];
 
-var femaleAkanNames = ['Akosua', 'Adwao', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
+var daysWeek = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 
 //calling functions
-function getAkanName(){
-var day = parseInt(document.getElementById("day").Value);
-var month = parseInt(document.getElementById("month").Value);
-var year = parseInt(document.getElementById("year").Value);
-var female = document.getElementById("female");
-var male = document.getElementById("male");
-// validate day
-if(day < 1 || day > 31){
-    alert("Incorrect day entry! Try again");
-}
-// validate month
-if(month < 0 || month >13){
-    alert("Incorrect month entry! Try Again");
-}
-// validate year
-if( year < 0 || year > 2020){
-   alert("Incorrect year entry! Try again");
-}
-var day = new Date(year + "/" + month + "/" + day);
+function getAkanName() {
+	var year = parseInt(document.getElementById("year").value);
+	var month = parseInt(document.getElementById("month").value);
+	var day = parseInt(document.getElementById("day").value);
+	var male = document.getElementById("male");
+	var female = document.getElementById("female");
 
-var dateOfBirth = day.getDay();
-	if (female.checked === true) {
+	//validate day
+	if (day <= 0 || day >= 32) {
+		alert(
+			"You have entered incorrect day! Kindly reset"
+		);
+    }
+    //validate month
+	if (month <= 0 || month >= 13) {
+		alert(
+			"You have entered incorrect month! Kindly reset"
+		);
+    }
+    //validate year
+	if (year <= 0 || year >2020) {
+		alert(
+			"You have entered incorrect year! Kindly reset"
+		);
+	}
+    var day = new Date(year + "/" + month + "/" + day);
+    
+
+	//storing date in variable date of birth
+	var dateOfBirth = day.getDay();
+	if (male.checked == true) {
 		document.getElementById("alert1").style.display = "block";
-		document.getElementById("span1").innerHTML = "You were born on: " + weekDays[dateOfBirth];
-		document.getElementById("span2").innerHTML ="Your Akan Name is " + femaleAkanNames[dateOfBirth];
-	} else if (male.checked == true) {
+		document.getElementById("span1").innerHTML =
+			"You were born on, " + daysWeek[dateOfBirth];
+		document.getElementById("span2").innerHTML =
+			"your Akan Name is " + maleAkanNames[dateOfBirth];
+	} else if (female.checked == true) {
 		document.getElementById("alert1").style.display = "block";
-		document.getElementById("span1").innerHTML = "You were born on: " + weekDays[dateOfBirth];
-		document.getElementById("span2").innerHTML = "Your Akan Name is " + maleAkanNames[dateOfBirth];
+		document.getElementById("span1").innerHTML = 
+		    "You were born on, " + daysWeek[dateOfBirth];
+		document.getElementById("span2").innerHTML = 
+		    "your Akan Name is " + femaleAkanNames[dateOfBirth];
 	}
 }
-//refresh button function
+
+// button refreshes the whole site
 function refreshPage() {
 	window.location.reload();
 }
