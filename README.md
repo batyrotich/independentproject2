@@ -1,6 +1,9 @@
 # AKAN NAMES
 ## The project is about a web application that takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name. Akan names are derived from Ghanian culture.
-![Akan ebsite snapshot](images/Snapshot.png)
+![Akan website snapshot](images/Snapshot.png)
+
+[Akannames iol ink](https://batyrotich.github.io/independentproject2/)
+
 ## Technologies used
 * HTML,CSS and BOOTSTRAP. HTML was adding content into the webpage, css and Bootrap was used in styling the webpage into a user friendly interface.
 * JavaScript: used in making the website responsive.
