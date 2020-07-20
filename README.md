@@ -16,12 +16,13 @@
 - JavaScript Console
 - Github account.
 ## How to set up and install
-Clone this repository to a location in your file system. command: git clone.
-[https://batyrotich.github.io/independentproject2/](https://batyrotich.github.io/independentproject2/)
+ ### Clone this repository to a location in your file system. command: git clone.
 
-Open terminal command line then navigate to the root folder of the application. week2project
+[https://github.com/batyrotich/independentproject2.git](https://github.com/batyrotich/independentproject2.git)
 
-Open index.html on your Browser
+### Open terminal command line then navigate to the root folder of the application. week2project
+
+### Open index.html on your Browser
 
 [LICENSE](https://github.com/batyrotich/independentproject2/blob/eddah/LICENSE)
 
