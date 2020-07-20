@@ -1,4 +1,6 @@
 # AKAN NAMES
+## [Author](https://github.com/batyrotich/)
+
 ## The project is about a web application that takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name. Akan names are derived from Ghanian culture.
 ![Akan website snapshot](images/Screenshot.png)
 
