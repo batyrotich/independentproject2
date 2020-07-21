@@ -25,6 +25,11 @@ marquee{
     text-decoration:black;
     padding: 5%;
 }
+.displayme container1{
+  font-size: larger;
+  text-decoration: black;
+  background-color: lightcoral;
+}
 .bottom {
     background-color:#3693ff;
     font-size: 20px;
